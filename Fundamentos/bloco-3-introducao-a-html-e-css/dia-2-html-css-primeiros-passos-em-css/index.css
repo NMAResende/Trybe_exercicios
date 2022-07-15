@@ -1,0 +1,30 @@
+h1 {
+    color: orange;
+    font-size: 64px;
+    font-family: sans-serif;
+}
+p {
+    font-weight: 600;
+    font-size: 3em;
+}
+.list { 
+    background-color: pink; 
+}
+body{
+    font-size: 16px;
+}
+ul{
+    font-style: oblique;
+    line-height: 20px;
+    text-align: initial;
+    text-decoration: underline;
+}
+#purple {
+    color:#c8a2c8;
+}
+#pink {
+    color: palevioletred;
+}
+#white{
+    color: white;
+}
