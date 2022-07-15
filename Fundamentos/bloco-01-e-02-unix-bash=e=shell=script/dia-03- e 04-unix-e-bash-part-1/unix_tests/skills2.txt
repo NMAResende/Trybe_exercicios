@@ -1,0 +1,8 @@
+Linux
+Macos
+Windowns
+PC
+CPU
+Internet
+Unix
+Bash
