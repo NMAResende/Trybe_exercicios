@@ -1,0 +1,57 @@
+ol{
+    background-color: yellow;
+}
+ol li:nth-of-type(1){
+    text-transform: uppercase;
+    font-weight: bold
+}
+ol li:nth-of-type(2){
+    color: green;
+    font-weight: bold;
+}
+ol li:nth-of-type(3){
+    text-transform: uppercase;
+    font-weight: bold;
+}
+ol li:nth-of-type(4){
+    color:green;
+    font-weight: bold;
+}
+ol li:nth-of-type(5){
+    text-transform: uppercase;
+    font-weight: bold;
+}
+h1, h3{
+    color: red;
+}
+h1{
+    font-size: 40px;
+    border: 1px solid black;
+}
+li{
+    font-size: 20px;
+}
+#ling li:not(:nth-child(n+4)){
+    color: blue;
+}
+.pink{
+    background-color: pink;
+}
+#aliados:hover{
+    font-weight: bold;
+}
+#aliados li a[href*="stackoverflow"]{
+    color:orange;
+}
+#aliados li a[href*="w3schools"]{
+    color:green;
+}
+#aliados li a[href*="developer.mozilla"]{
+    color:black;
+}
+#aliados li a[href*="devdocs"]{
+    color:yellow;
+}
+#aliados li a[href*="betrybe"]{
+    color:green;
+}
