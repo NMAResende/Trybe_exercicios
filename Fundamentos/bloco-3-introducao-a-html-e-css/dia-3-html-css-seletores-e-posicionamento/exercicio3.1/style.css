@@ -1,0 +1,37 @@
+div:hover{
+    border:4px solid pink;
+}
+div:nth-of-type(1){
+    color: azul;
+    font-style: italic;
+}
+div:nth-of-type(2){
+    color: orange;
+}
+div:nth-of-type(3){
+    color: green;
+    font-size: larger;
+    font-style: italic;
+}
+div:nth-of-type(4){
+    color:brown;
+}
+div:nth-of-type(5){
+    color:lightblue;
+    font-style: italic;
+}
+div:nth-of-type(1) >h3{
+    font-size: medium;
+}
+div:nth-of-type(2)>h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div:nth-of-type(3)>h3{
+    font-style: oblique;
+}
+div:nth-of-type(4)>h3{
+    font-weight: 200px;
+}
+div:nth-of-type(5)>h3{
+    font-style: italic;
+}
