@@ -1,0 +1,71 @@
+body{
+    margin-left: 3%;
+    background-color: lightblue;
+}
+h1{
+    text-align: center;
+    border: 3px solid black;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.lin{
+    display:inline;
+    font-size: 20px;
+    padding-left: 20px;
+    text-decoration: underline;
+    color: blue;
+}
+h2{
+    text-align: center;
+    background-color: blanchedalmond;
+}
+#foto1{
+    border-radius: 50%;
+    width: 500px;
+   margin:auto;
+   display: block;
+   
+}
+#cientifico{
+    text-align: center;
+    font-size: 20px;
+    color: red;
+}
+h3{
+    color: #00008B;
+    border: 2px solid #00008B;
+    text-align: center;
+    font-size: 25px;
+}
+.inform{
+    display: inline-block;
+    font-size: 18px;
+    padding-left: 60px;
+    font-weight: bolder;
+
+}
+.imagem{
+    width: 400px;
+    border-radius: 50%;
+    margin:auto;
+   display: block;
+
+}
+.texto{
+    font-size: 18px;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+.ref{
+    font-size: 23px;
+    padding-bottom: 2%;
+    
+}
+#footer{
+    font-size: 18px;
+    text-align: end;
+    font-weight: bolder;
+}
+strong{
+    color: red;
+}
