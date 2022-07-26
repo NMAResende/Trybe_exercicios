@@ -25,5 +25,5 @@ const numerosRomanos = {
     return soma;
   }
   
-  console.log(romanoParaDecimal('MMXVIII'));
+  console.log(romanoParaDecimal('xxx'));
   
