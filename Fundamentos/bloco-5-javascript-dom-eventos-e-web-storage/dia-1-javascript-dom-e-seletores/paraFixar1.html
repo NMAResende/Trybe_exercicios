@@ -3,16 +3,17 @@
   <body>
     <header>
       <h2 id="page-title">Título</h2>
-      <p id="paragraph">Dê uma cor para este parágrafo!</p>
+      <p class="paragraph">Dê uma cor para este parágrafo!</p>
       <h4 id="subtitle">Subtítulo</h4>
-      <p id="second-paragraph">Segundo parágrafo!</p>
+      <p class="paragraph">Segundo parágrafo!</p>
     </header>
     <script>
-      const paragraph = document.getElementById("paragraph");
-      paragraph.style.color = "red";
+      const paragraph = document.getElementsByClassName("paragraph")[0].style.color='red';
+      const paragraph2 = document.getElementsByClassName("paragraph")[1].style.color='green';
       console.log(document.getElementById("page-title").innerText = "A última música");
-      console.log(document.getElementById("second-paragraph").innerText = "A Última Música acompanha a jovem Ronnie Miller (Miley Cyrus) que é filha de pais divorciados e seu pai (Greg Kinnear) mora longe de Nova York, numa cidade praiana. Após três anos de separação, ela ainda sente raiva por tudo o que aconteceu até o dia em que sua mãe (Kelly Preston) decide enviá-la para passar o verão com ele. Uma vez lá, depois de conhecer novas pessoas e paixões, ela encontra alguém que, além de bom músico e professor, é, acima de tudo, um verdadeiro pai.");
-      console.log(document.getElementById("subtitle").innerHTML = "Filme de romance. Lançado em 2010");
+      console.log(document.getElementsByTagName("h4")[0].innerText = "Filme de romance. Lançado em 2010");
+      const sub = document.getElementsByTagName("h4")[0].style.color='purple';
+      console.log(document.getElementsByClassName("paragraph")[1].innerText = "A Última Música acompanha a jovem Ronnie Miller (Miley Cyrus) que é filha de pais divorciados e seu pai (Greg Kinnear) mora longe de Nova York, numa cidade praiana. Após três anos de separação, ela ainda sente raiva por tudo o que aconteceu até o dia em que sua mãe (Kelly Preston) decide enviá-la para passar o verão com ele. Uma vez lá, depois de conhecer novas pessoas e paixões, ela encontra alguém que, além de bom músico e professor, é, acima de tudo, um verdadeiro pai.");
     </script>
   </body>
 </html>
