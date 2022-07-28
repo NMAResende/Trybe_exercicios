@@ -91,12 +91,22 @@
       filhoImage.className = 'small-image';
       image.appendChild(filhoImage);
 
-      const list = document.getElementsByTagName('section')[2];
-      const filhoList = document.createElement('ul');
-      list.appendChild(filhoList);
-      for (let i = 0; i <)
+      const orderList = document.createElement('ul');
+      filho3Section.appendChild(orderList);
+      const numExtenso = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (let i in numExtenso){
+        const list1 = document.createElement('li');
+        list1.innerText = numExtenso[i];
+        filho3Section.appendChild(list1);
+      }
      
-      
+     
+     for (let i = 0; i < 3; i +=1){
+    const criandoh3 = document.createElement('h3');
+   
+     filhoMain.appendChild(criandoh3); 
+     }
+     console.log(filhoMain)
     </script>
   </body>
 </html>
