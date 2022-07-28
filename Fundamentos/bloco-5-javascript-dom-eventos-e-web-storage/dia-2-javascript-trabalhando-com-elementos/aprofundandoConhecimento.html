@@ -86,9 +86,8 @@
       const filho3Section = document.createElement('section');
       filho3Section.className = 'right-content';
       pai3.appendChild(filho3Section);
-      filho3Section.removeChild();
-     
       
+
       const image = document.getElementsByTagName('section')[1];
       const filhoImage = document.createElement('img');
       filhoImage.src = 'https://picsum.photos/200';
@@ -109,7 +108,10 @@
     criandoh3.className = 'description ';
      filhoMain.appendChild(criandoh3); 
      }
-    
+
+     const removendoLeft = document.getElementsByClassName('left-content')[0];
+     pai2.removeChild(removendoLeft);
+     
     </script>
   </body>
 </html>
