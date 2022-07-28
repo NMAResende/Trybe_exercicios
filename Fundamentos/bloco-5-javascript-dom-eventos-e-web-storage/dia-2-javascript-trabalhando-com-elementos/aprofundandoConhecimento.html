@@ -70,7 +70,16 @@
       filhoSection.className = 'center-content';
       pai.appendChild(filhoSection);
       
+      const paragraph = document.getElementsByTagName('section')[0];
+      const filhoP = document.createElement('p');
+      filhoP.innerText="Trabalhando com elementos";
+      paragraph.appendChild(filhoP);
       
+      const pai2 = document.getElementsByTagName('main')[0];
+      const filho2Section = document.createElement('section');
+      filho2Section.className = 'left-content';
+      pai2.appendChild(filho2Section);
+      console.log(pai2);
     </script>
   </body>
 </html>
