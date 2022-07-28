@@ -84,7 +84,13 @@ function changeColor2(){
        }
        capitalLetter();
 
-       
+       function goThrough(){
+        let percorrendoP = document.getElementsByTagName('p');
+        for (let i = 0; i < percorrendoP.length; i +=1){
+            console.log(percorrendoP[i].innerHTML);
+        }
+       }
+       goThrough();
     </script>
   </body>
 </html>
