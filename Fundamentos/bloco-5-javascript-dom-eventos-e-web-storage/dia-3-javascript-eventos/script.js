@@ -49,3 +49,25 @@ function criandoBotao(Feriados){
   botao.appendChild(botaoFilho);
 }
 criandoBotao('Feriados');
+
+ function changeColor(){
+const holiday = document.querySelector('#btn-holiday');
+const holidayAll = document.querySelector('.holiday');
+ const backgroundColor = "purple";
+ const newColor = 'black';
+
+ holiday.addEventListener('click', function(){
+  for (let i=0; i<holidayAll.length; i+=1){
+    if(holidayAll[i].style.backgroundColor === newColor){
+      holidayAll[i].style.backgroundColor = backgroundColor;
+    }else{
+      holidayAll[i].style.backgroundColor = newColor;
+    }
+  }
+ });
+}
+changeColor()
+
+
+
+
