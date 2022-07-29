@@ -30,7 +30,6 @@ input.addEventListener('input', function(event){
     const textBox = document.getElementsByClassName('tech')[0];
     textBox.innerText =event.target.value
 });
-console.log(input)
 
 // 4. Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
