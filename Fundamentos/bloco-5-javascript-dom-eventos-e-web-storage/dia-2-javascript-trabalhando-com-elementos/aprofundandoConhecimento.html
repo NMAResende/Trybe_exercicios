@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+        background-color: white;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const filhoH1 = document.createElement('h1');
+      filhoH1.innerText='Exercício 5.2 - JavaScript DOM';
+      filhoH1.className = 'title';
+      document.body.appendChild(filhoH1);
+     
+      
+      const filhoMain = document.createElement('main');
+      filhoMain.className = "main-content";
+      document.body.appendChild(filhoMain);
+     
+      const pai = document.getElementsByTagName('main')[0];
+      const filhoSection = document.createElement('section');
+      filhoSection.className = 'center-content';
+      pai.appendChild(filhoSection);
+      
+      const paragraph = document.getElementsByTagName('section')[0];
+      const filhoP = document.createElement('p');
+      filhoP.innerText="Trabalhando com elementos";
+      paragraph.appendChild(filhoP);
+      
+      const pai2 = document.getElementsByTagName('main')[0];
+      const filho2Section = document.createElement('section');
+      filho2Section.className = 'left-content';
+      pai2.appendChild(filho2Section);
+      
+      const pai3 = document.getElementsByTagName('main')[0];
+      const filho3Section = document.createElement('section');
+      filho3Section.className = 'right-content';
+      pai3.appendChild(filho3Section);
+      
+
+      const image = document.getElementsByTagName('section')[1];
+      const filhoImage = document.createElement('img');
+      filhoImage.src = 'https://picsum.photos/200';
+      filhoImage.className = 'small-image';
+      image.appendChild(filhoImage);
+
+      const orderList = document.createElement('ul');
+      filho3Section.appendChild(orderList);
+      const numExtenso = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+      for (let i in numExtenso){
+        const list1 = document.createElement('li');
+        list1.innerText = numExtenso[i];
+        filho3Section.appendChild(list1);
+      }
+     
+     for (let i = 0; i < 3; i +=1){
+    const criandoh3 = document.createElement('h3');
+    criandoh3.className = 'description ';
+     filhoMain.appendChild(criandoh3); 
+     }
+
+     const removendoLeft = document.getElementsByClassName('left-content')[0];
+     pai2.removeChild(removendoLeft);
+     
+    </script>
+  </body>
+</html>
