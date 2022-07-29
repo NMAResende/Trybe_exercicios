@@ -68,6 +68,16 @@ const holidayAll = document.querySelector('.holiday');
 }
 changeColor()
 
+function criandoBotaoS(sextaFeira){
+  const botaoS = document.getElementsByClassName('buttons-container')[0];
+  const botaoFilhoS = document.createElement('button');
+  botaoFilho.innerHTML = Sexta-feira;
+  botaoFilho.id = "btn-holiday";
+  
+  botaoS.appendChild(botaoFilhoS);
+}
+criandoBotao('Sexta-feira');
+
 
 
 
