@@ -39,3 +39,13 @@ for (let i=0; i<decemberDaysList.length; i+=1){
 }
 }
 createdays();
+
+function criandoBotao(Feriados){
+  const botao = document.getElementsByClassName('buttons-container')[0];
+  const botaoFilho = document.createElement('button');
+  botaoFilho.innerHTML = Feriados;
+  botaoFilho.id = "btn-holiday";
+  
+  botao.appendChild(botaoFilho);
+}
+criandoBotao('Feriados');
