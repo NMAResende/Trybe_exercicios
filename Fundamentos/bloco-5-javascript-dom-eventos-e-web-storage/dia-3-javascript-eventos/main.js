@@ -44,6 +44,7 @@ myWebpage.addEventListener('mouseover', function(){
     myWebpage.style.color='purple';
 })
 
+
 // Segue abaixo um exemplo do uso de event.target:
 
 
