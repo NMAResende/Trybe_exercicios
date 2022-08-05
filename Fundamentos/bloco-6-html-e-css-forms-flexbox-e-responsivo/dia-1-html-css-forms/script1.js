@@ -6,6 +6,20 @@ function getButton(event){
         botaoEnviar.addEventListener('click', getButton);
     }
     
+function botaoApagar(){
+    const apagar = document.getElementById('botao-apagar');
 
+    apagar.addEventListener('click', botaoApagar);
+}
 
+function clearButton(){
+    const botaoLimpar = document.querySelectorAll("input");
+    
+    for(let i = 0; i < botaoLimpar.length; i += 0){
+        const analisarInput = botaoLimpar[i];
+        if(analisarInput.value = ''){
+            analisarInput.checked = false;
+        };
 
+    }
+}
