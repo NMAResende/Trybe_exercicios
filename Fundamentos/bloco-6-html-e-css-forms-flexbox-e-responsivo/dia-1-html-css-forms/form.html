@@ -10,7 +10,7 @@
 
 <body>
     <h1>TrybeTrip</h1>
-    <form action="" method="get">
+    <form action="" method="get" onSubmit={prevent}>
         <label for="nome-completo">Nome:
             <input type="text" name="nome" id="nome-completo" minlength="10" maxlength="40"
                 placeholder="Digite aqui seu nome completo" required>
@@ -59,7 +59,7 @@
         <br>
         <br>
         <button type="submit" id="botao-enviar">Enviar formulário</button>
-        <button type="submit" id="botao-apagar">Apagar campos</button>
+        <button type="button" id="botao-apagar">Apagar campos</button>
     </form>
 
     <script>src = "./script1.js"</script>
