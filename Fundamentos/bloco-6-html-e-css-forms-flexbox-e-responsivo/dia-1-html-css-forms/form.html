@@ -10,7 +10,7 @@
 
 <body>
     <h1>TrybeTrip</h1>
-    <form action="" method="get" onSubmit={prevent}>
+    <form action="" method="get">
         <label for="nome-completo">Nome:
             <input type="text" name="nome" id="nome-completo" minlength="10" maxlength="40"
                 placeholder="Digite aqui seu nome completo" required>
@@ -22,7 +22,7 @@
         </label>
         <br>
         <fieldset>
-            <legend>Destino preferido:</legend> 
+            <legend>Destino preferido:</legend>
             <label for="destino1">
                 <input type="radio" id="destino1" name="destino preferido" value="Cidade" checked>Cidade
             </label>
@@ -58,11 +58,68 @@
         </label>
         <br>
         <br>
-        <button type="submit" id="botao-enviar">Enviar formulário</button>
+        <button type="submit" id="botao-enviar" disabled>Enviar formulário</button>
         <button type="button" id="botao-apagar">Apagar campos</button>
     </form>
 
-    <script>src = "./script1.js"</script>
+    <script>
+        //utilizando o preventDefault
+        function getButton(event) {
+            event.preventDefault();
+            const validando = limiteCaracteres();
+            if (validando === false){
+                alert('Dados Inválidos')
+            }else{
+                alert('Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.')
+            }
+        }
+
+        //Criando o botão apagar
+        function clearButton() {
+            const botaoLimpar = document.querySelectorAll("input");
+            const text = document.getElementById('textWin');
+            for (let i = 0; i < botaoLimpar.length; i += 1) {
+                const analisarInput = botaoLimpar[i];
+                if (analisarInput.value = '') {
+                    analisarInput.checked = false;
+                }
+                text.value = '';
+            }
+        }
+        //Bônus
+        //autorização das fotos
+        function autorização() {
+            const enviar = document.getElementById('botao-enviar');
+            const autImag = document.getElementById("divulgacaoFoto");
+            enviar.disabled = !autImag.checked;
+        }
+        window.onload = function () {
+            const apagar = document.getElementById('botao-apagar');
+            apagar.addEventListener('click', clearButton);
+            const botaoEnviar = document.getElementById('botao-enviar');
+            botaoEnviar.addEventListener('click', getButton);
+            const autImag = document.getElementById("divulgacaoFoto");
+            autImag.addEventListener('change', autorização);
+        }
+
+        //Limitando os caracteres
+        function limiteCaracteres() {
+            const nomeCompleto = document.getElementById('nome-completo').value.length;
+            const email = document.getElementById("input-email").value.length;
+            const textarea = document.getElementById("textWin").value.length;
+
+            const validandoNome = nomeCompleto < 10 || nomeCompleto > 40;
+            const validandoEmail = email < 10 || email > 50;
+            const validandoTextarea = textarea > 500;
+
+            if (validandoNome || validandoEmail || validandoTextarea) {
+                return false;
+            } else {
+                return true;
+            }
+
+        }
+    </script>
 </body>
 
 </html>
