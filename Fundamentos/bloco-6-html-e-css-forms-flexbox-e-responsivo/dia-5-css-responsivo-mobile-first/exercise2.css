@@ -126,35 +126,42 @@ footer p{
 }
 
 @media  (min-width: 1025px) {
+    body{
+        background-color: #ffe4e1;
+        margin: 20px;
+      }
+
     header{
 
     }
   
     header p{
-  
+   
     }
   
     header nav{
-  
+        color: #292325;
     }
     header ul li{
   
     }
   
     .aside-one h2{
-  
+  text-align: justify;
     }
   
-    .aside-one ul li{
-  
+    .aside-one ul {
+        display: inline-block;
+        text-align: left;
+
     }
   
     .aside-two h2{
-  
+        text-align: right;
     }
   
-    .aside-two ul li{
-  
+    .aside-two ul{
+  text-align: right;
     }
   
     .main-content h1{
