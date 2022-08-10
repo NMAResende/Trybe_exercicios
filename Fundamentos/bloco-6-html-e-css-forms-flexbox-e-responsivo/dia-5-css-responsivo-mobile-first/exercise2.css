@@ -72,7 +72,11 @@ footer p{
     font-style: italic;
 }
 
-@media screen and (max-width:700px) and (min-width: 1024px){
+@media screen and (min-width:700px) and (max-width: 1024px){
+    body{
+        background-color: #87ceeb;
+        margin: 20px;
+      }
     header{
 
     }
@@ -82,7 +86,7 @@ footer p{
     }
   
     header nav{
-  
+        color: #000080;
     }
     header ul li{
   
@@ -100,8 +104,8 @@ footer p{
   
     }
   
-    .aside-two ul li{
-  
+    .aside-two ul{
+        text-align: center;
     }
   
     .main-content h1{
