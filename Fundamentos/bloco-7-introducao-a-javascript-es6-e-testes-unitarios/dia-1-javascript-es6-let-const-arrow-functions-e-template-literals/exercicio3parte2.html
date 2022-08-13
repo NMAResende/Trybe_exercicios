@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <center><h3>Contador de click</h3></center>
+    <div>
+      <center><h3 id="count">0</h3></center>
+    </div>
+  </header>
+  <main>
+    <div>
+      <center><button type="button" id="click">Click aqui!</button></center>
+    </div>
+  </main>
+  <script type="text/javascript">
+    let clickCount = 0;
+    let btn = document.getElementById('click');
+    let contar = document.getElementById('count');
+
+    btn.addEventListener('click', () => {
+      clickCount++;
+      contar.innerHTML = clickCount;
+    });
+  </script>
+</body>
+</html>
