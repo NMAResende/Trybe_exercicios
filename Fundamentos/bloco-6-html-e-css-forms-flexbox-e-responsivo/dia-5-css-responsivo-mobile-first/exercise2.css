@@ -1,0 +1,186 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+    background-color: #f5f5f5;
+    margin: 20px;
+  }
+
+  header{
+   
+  }
+
+  header p{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+  }
+
+  header nav{
+   text-decoration: underline;
+   color: #6495ed;
+  }
+  header ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  .aside-one h2{
+  text-align: center;
+  }
+
+  .aside-one ul{
+    list-style: none;
+    text-align: center;
+    bottom: 40px;
+  }
+
+  .aside-two h2{
+    text-align: center;
+  }
+
+  .aside-two ul{
+    list-style: none;
+  }
+
+  .main-content h1{
+    text-align: center;
+  }
+
+  .main-content p{
+    margin: 30px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+footer h3{
+ text-align: center;
+ text-decoration: underline;
+}
+
+footer p{
+    text-align: justify;
+    font-style: italic;
+}
+
+@media screen and (min-width:700px) and (max-width: 1024px){
+    body{
+        background-color: #87ceeb;
+        margin: 20px;
+      }
+    header{
+
+    }
+  
+    header p{
+  
+    }
+  
+    header nav{
+        color: #000080;
+    }
+    header ul li{
+  
+    }
+  
+    .aside-one h2{
+  
+    }
+  
+    .aside-one ul li{
+  
+    }
+  
+    .aside-two h2{
+  
+    }
+  
+    .aside-two ul{
+        text-align: center;
+    }
+  
+    .main-content h1{
+  
+    }
+  
+    .main-content p{
+  
+  }
+  
+  footer h3{
+  
+  }
+  
+  footer p{
+      
+  }
+}
+
+@media  (min-width: 1025px) {
+    body{
+        background-color: #ffe4e1;
+        margin: 20px;
+      }
+
+    header{
+
+    }
+  
+    header p{
+   
+    }
+  
+    header nav{
+        color: #292325;
+    }
+    header ul li{
+  
+    }
+  
+    .aside-one h2{
+  text-align: justify;
+    }
+  
+    .aside-one ul {
+        display: inline-block;
+        text-align: left;
+        font-size: 20px;
+    }
+  
+    .aside-two h2{
+        text-align: right;
+    }
+  
+    .aside-two ul{
+  text-align: right;
+  font-size: 20px;
+    }
+  
+    .main-content h1{
+  
+    }
+  
+    .main-content p{
+  
+  }
+  
+  footer h3{
+  
+  }
+  
+  footer p{
+      
+  }
+    
+}
+
+

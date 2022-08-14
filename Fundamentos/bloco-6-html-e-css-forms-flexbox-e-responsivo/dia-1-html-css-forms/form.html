@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>TrybeTrip</h1>
+    <form action="" method="get">
+        <label for="nome-completo">Nome:
+            <input type="text" name="nome" id="nome-completo" minlength="10" maxlength="40"
+                placeholder="Digite aqui seu nome completo" required>
+        </label>
+        <br>
+        <label for="input-email">Email:
+            <input type="email" name="email" id="input-email" placeholder="Digite aqui seu email" minlength="10"
+                maxlength="50" required>
+        </label>
+        <br>
+        <fieldset>
+            <legend>Destino preferido:</legend>
+            <label for="destino1">
+                <input type="radio" id="destino1" name="destino preferido" value="Cidade" checked>Cidade
+            </label>
+            <label for="destino2">
+                <input type="radio" id="destino2" name="destino preferido" value="Campo">Campo
+            </label>
+            <label for="destino3">
+                <input type="radio" id="destino3" name="destino preferido" value="Praia">Praia
+            </label>
+            <label for="destino4">
+                <input type="radio" id="destino4" name="destino preferido" value="Montanha">Montanha
+            </label>
+        </fieldset>
+        <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+        <textarea name="motivo-de-ganhar" id="textWin" maxlength="500"></textarea>
+        <br>
+        <br>
+        <label for="data-viagem"> Melhor data para a viagem:
+            <input type="date" id="data-viagem">
+        </label>
+        <br>
+        <br>
+        <label for="promo">
+            <input type="checkbox" name="promocoes" id="promo">Gostaria de receber outras incríveis oportunidades
+            oferecidas
+            pela Trybe?
+        </label>
+        <br>
+        <label for="divulgacaoFoto">
+            <input type="checkbox" name="divulgacao" id="divulgacaoFoto">Concordo que imagens das minhas férias poderão
+            ser
+            usadas na divulgação de concursos futuros.
+        </label>
+        <br>
+        <br>
+        <button type="submit" id="botao-enviar" disabled>Enviar formulário</button>
+        <button type="button" id="botao-apagar">Apagar campos</button>
+    </form>
+
+    <script>
+        //utilizando o preventDefault
+        function getButton(event) {
+            event.preventDefault();
+            const validando = limiteCaracteres();
+            if (validando === false){
+                alert('Dados Inválidos')
+            }else{
+                alert('Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.')
+            }
+        }
+
+        //Criando o botão apagar
+        function clearButton() {
+            const botaoLimpar = document.querySelectorAll("input");
+            const text = document.getElementById('textWin');
+            for (let i = 0; i < botaoLimpar.length; i += 1) {
+                const analisarInput = botaoLimpar[i];
+                if (analisarInput.value = '') {
+                    analisarInput.checked = false;
+                }
+                text.value = '';
+            }
+        }
+        //Bônus
+        //autorização das fotos
+        function autorização() {
+            const enviar = document.getElementById('botao-enviar');
+            const autImag = document.getElementById("divulgacaoFoto");
+            enviar.disabled = !autImag.checked;
+        }
+        window.onload = function () {
+            const apagar = document.getElementById('botao-apagar');
+            apagar.addEventListener('click', clearButton);
+            const botaoEnviar = document.getElementById('botao-enviar');
+            botaoEnviar.addEventListener('click', getButton);
+            const autImag = document.getElementById("divulgacaoFoto");
+            autImag.addEventListener('change', autorização);
+        }
+
+        //Limitando os caracteres
+        function limiteCaracteres() {
+            const nomeCompleto = document.getElementById('nome-completo').value.length;
+            const email = document.getElementById("input-email").value.length;
+            const textarea = document.getElementById("textWin").value.length;
+
+            const validandoNome = nomeCompleto < 10 || nomeCompleto > 40;
+            const validandoEmail = email < 10 || email > 50;
+            const validandoTextarea = textarea > 500;
+
+            if (validandoNome || validandoEmail || validandoTextarea) {
+                return false;
+            } else {
+                return true;
+            }
+
+        }
+    </script>
+</body>
+
+</html>
