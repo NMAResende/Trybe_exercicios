@@ -5,11 +5,8 @@ const acertoQuestoes = (RIGHT_ANSWERS, STUDENT_ANSWERS, () => {
   let count = 0;
   for (let i = 0; i < RIGHT_ANSWERS.length; i += 1) {
     if (RIGHT_ANSWERS[i] === STUDENT_ANSWERS[i]) {
-         count += 1;
-    }else if (STUDENT_ANSWERS[i] === 'N.A'){
-      count = count;
-    }
-    else if (RIGHT_ANSWERS[i] !== STUDENT_ANSWERS){
+      count += 1;
+    } else if (RIGHT_ANSWERS[i] !== STUDENT_ANSWERS && STUDENT_ANSWERS[i] !== 'N.A') {
       count -= 0.5;
     }
   }
