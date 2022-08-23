@@ -61,11 +61,6 @@ const books = [
   },
 ];
 
-const nameAndAge = books.map((books) => {
-  const nomeIdade = {};
-  nomeIdade.age = books.releaseYear - books.author.birthYear;
-  nomeIdade.author = books.author.name;
-  return nomeIdade;
-})
-.sort((a, b) => a.age - b.age);
-console.log(nameAndAge);
+const fantasyOrScienceFiction = books.filter((books) =>  books.genre === 'Ficção Científica' || books.genre === 'Fantasia');
+
+console.log(fantasyOrScienceFiction);
