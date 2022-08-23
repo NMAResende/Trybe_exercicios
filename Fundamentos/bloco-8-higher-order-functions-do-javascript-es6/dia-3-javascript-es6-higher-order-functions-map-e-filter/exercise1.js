@@ -62,6 +62,6 @@ const books = [
 ];
 
 
-const formatedBookNames = books.map((books) => `${books.name} - ${books.genre} - ${books.author.name}`);
+const formatedBookNames = () => books.map((books) => `${books.name} - ${books.genre} - ${books.author.name}`);
 
-console.log(formatedBookNames);
+console.log(formatedBookNames());

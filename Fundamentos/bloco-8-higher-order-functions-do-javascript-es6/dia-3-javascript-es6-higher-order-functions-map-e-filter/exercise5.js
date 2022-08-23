@@ -61,6 +61,11 @@ const books = [
   },
 ];
 
-const fantasyOrScienceFiction = () =>  books.filter((books) =>  books.genre === 'Ficção Científica' || books.genre === 'Fantasia');
+function fantasyOrScienceFictionAuthors(array) {
+  const ordemAlf = books.filter((books) => books.genre === 'Ficção Científica' || books.genre === 'Fantasia')
+  .map((books) => books.author.name).sort();
+  return ordemAlf;
+};
 
-console.log(fantasyOrScienceFiction());
+
+console.log(fantasyOrScienceFictionAuthors(books));

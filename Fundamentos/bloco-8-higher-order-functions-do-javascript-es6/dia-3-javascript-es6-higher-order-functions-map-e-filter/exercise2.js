@@ -61,11 +61,11 @@ const books = [
   },
 ];
 
-const nameAndAge = books.map((books) => {
+const nameAndAge = () => books.map((books) => {
   const nomeIdade = {};
   nomeIdade.age = books.releaseYear - books.author.birthYear;
   nomeIdade.author = books.author.name;
   return nomeIdade;
 })
 .sort((a, b) => a.age - b.age);
-console.log(nameAndAge);
+console.log(nameAndAge());
