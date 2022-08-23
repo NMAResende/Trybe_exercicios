@@ -61,7 +61,9 @@ const books = [
   },
 ];
 
-
-const formatedBookNames = () => books.map((books) => `${books.name} - ${books.genre} - ${books.author.name}`);
-
-console.log(formatedBookNames());
+function authorWith3DotsOnName() {
+  return books.find((books) => 
+    books.author.name[1] === '.' && books.author.name[4] === '.' && books.author.name[7] === '.' 
+  ).name;
+}
+console.log(authorWith3DotsOnName(books));

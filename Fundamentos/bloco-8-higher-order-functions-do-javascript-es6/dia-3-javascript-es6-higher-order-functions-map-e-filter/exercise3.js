@@ -61,7 +61,6 @@ const books = [
   },
 ];
 
+const fantasyOrScienceFiction = () =>  books.filter((books) =>  books.genre === 'Ficção Científica' || books.genre === 'Fantasia');
 
-const formatedBookNames = () => books.map((books) => `${books.name} - ${books.genre} - ${books.author.name}`);
-
-console.log(formatedBookNames());
+console.log(fantasyOrScienceFiction());

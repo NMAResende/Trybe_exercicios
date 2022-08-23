@@ -61,7 +61,9 @@ const books = [
   },
 ];
 
-
-const formatedBookNames = () => books.map((books) => `${books.name} - ${books.genre} - ${books.author.name}`);
-
-console.log(formatedBookNames());
+function oldBooksOrdered() {
+  const oldBooks = books.filter((books) => 2022 - books.releaseYear >= 60)
+ .sort((a, b) => a.releaseYear - b.releaseYear);
+  return oldBooks;
+}
+console.log(oldBooksOrdered());
