@@ -61,11 +61,11 @@ const books = [
   },
 ];
 
-function fantasyOrScienceFictionAuthors() {
-  const ordemAlf = books.filter((books) => books.genre === 'Ficção Científica' || books.genre === 'Fantasia')
-  .map((books) => books.author.name).sort();
-  return ordemAlf;
+function oldBooks() {
+  const oldBook = books.filter((books) => 2022 - books.releaseYear >= 60)
+  .map((books) => books.name);
+  return oldBook;
 };
 
 
-console.log(fantasyOrScienceFictionAuthors(books));
+console.log(oldBooks(books));
