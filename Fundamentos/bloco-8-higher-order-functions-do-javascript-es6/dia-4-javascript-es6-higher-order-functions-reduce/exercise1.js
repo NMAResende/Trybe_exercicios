@@ -5,7 +5,7 @@ const arrays = [
 ];
 
 function flatten() {
-  const reduzirArray = arrays.reduce((acc, curr) => acc + ' ' + curr);
+  const reduzirArray = arrays.reduce((acc, curr) => `${acc} ${curr}`);
   return reduzirArray;
 };
 console.log(flatten());
