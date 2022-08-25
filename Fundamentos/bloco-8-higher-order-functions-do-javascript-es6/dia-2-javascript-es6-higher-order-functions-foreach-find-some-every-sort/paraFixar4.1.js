@@ -6,7 +6,7 @@ const people = [
   { name: 'Bruna', age: 19 },
 ];
 
-people.sort((a, b) => a.age > b.age ? 1 : -1);
-// Adicione se código aqui
+const ordenar = () => people.sort((a, b) => a.age > b.age ? 1 : -1);
 
-console.log(people);
+
+console.log(ordenar());
