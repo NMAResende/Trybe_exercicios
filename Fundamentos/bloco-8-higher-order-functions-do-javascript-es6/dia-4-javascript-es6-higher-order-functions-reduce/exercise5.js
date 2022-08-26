@@ -15,6 +15,8 @@ function containsA() {
     return acc
   },0)
   
-  
+ exercicios/8.5
+
+  main
 }
 console.log(containsA());
