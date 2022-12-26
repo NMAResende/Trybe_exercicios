@@ -50,5 +50,5 @@
 10° Projeto App de Receitas;
 
 <p align="center">
-![image](https://user-images.githubusercontent.com/108953831/188213345-d46d9ce1-3da6-47ca-8306-2d3efe1b0c0c.png)
+<img src="https://user-images.githubusercontent.com/108953831/188213345-d46d9ce1-3da6-47ca-8306-2d3efe1b0c0c.png" />
 </p>
