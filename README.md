@@ -1,10 +1,12 @@
+<p align="center">
 ![image](https://user-images.githubusercontent.com/108953831/188212682-b12455ac-b289-4883-ae22-f8dbe9c3a929.png)
+</p>
 
 
 # Trybe_exercícios
-=> Exercícios realizados no bloco de Fundamentos do curso Desenvolvimento Web.
+### Exercícios realizados no bloco de Fundamentos do curso Desenvolvimento Web.
 
-Blocos:
+#### Blocos:
 
 1° Unix e Bash;
 
@@ -23,9 +25,9 @@ Blocos:
 8° Higher Order Functions do JavaScript ES6;
 
 
-=> Exercícios realizados no bloco de Front-end do curso Desenvolvimento Web.
+### Exercícios realizados no bloco de Front-end do curso Desenvolvimento Web.
 
-Blocos:
+#### Blocos:
 
 1° Introdução ao Frontend e JavaScript assíncrono;
 
@@ -47,6 +49,6 @@ Blocos:
 
 10° Projeto App de Receitas;
 
-
+<p align="center">
 ![image](https://user-images.githubusercontent.com/108953831/188213345-d46d9ce1-3da6-47ca-8306-2d3efe1b0c0c.png)
-
+</p>
