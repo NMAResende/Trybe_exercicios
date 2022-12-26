@@ -2,8 +2,10 @@
 <img src="https://user-images.githubusercontent.com/108953831/188212682-b12455ac-b289-4883-ae22-f8dbe9c3a929.png" />
 </p>
 
-
+<p align="center">
 # Trybe_exercícios
+</p>
+
 ### Exercícios realizados no bloco de Fundamentos do curso Desenvolvimento Web.
 
 #### Blocos:
