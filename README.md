@@ -24,7 +24,7 @@ Trybe_exercícios
 
 7° Introdução à JavaScript ES6 e Testes Unitários;
 
-8° Higher Order Functions do JavaScript ES6;
+8° Higher Order Functions do JavaScript ES6.
 
 
 ### Exercícios realizados no bloco de Front-end do curso Desenvolvimento Web.
@@ -49,7 +49,39 @@ Trybe_exercícios
 
 9° Context API e React Hooks;
 
-10° Projeto App de Receitas;
+10° Projeto App de Receitas.
+
+
+### Exercícios realizados no bloco de Back-end do curso Desenvolvimento Web.
+
+#### Blocos:
+
+1° Docker: Utilizando containers;
+
+2° Introdução a SQL;
+
+3° Função SQL, JOINs e Normalização;
+
+4° Introdução ao desenvolvimento Web com Node.js;
+
+5° Arquitetura de Software: Model, Service e Controller;
+
+6° Node.js: ORM e Autenticação; 
+
+7° Masterclass: Implantação de aplicações em nuvem;
+
+8° Introdução a TypeScript;
+
+9° Programação orientada a objetos (POO) e SOLID;
+
+10° Projeto - TFC - Trybe Futebol Clube;
+
+11° Introdução ao MongoDB;
+
+12° APIs OO e NoSQL;
+
+13° Projeto - App de delivery.
+
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/108953831/188213345-d46d9ce1-3da6-47ca-8306-2d3efe1b0c0c.png" />
