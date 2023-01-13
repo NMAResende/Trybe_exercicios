@@ -5,4 +5,18 @@ services:
     container_name: exercicio-2
     ports:
       - 2368:2368
+    environment:
+      database__client: mysql
+      database__connection__host: wordpress
+      database__connection__user: wordpress
+      database__connection__password: wordpress
+      database__connection__database: wordpress
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: wordpress
+    
     
