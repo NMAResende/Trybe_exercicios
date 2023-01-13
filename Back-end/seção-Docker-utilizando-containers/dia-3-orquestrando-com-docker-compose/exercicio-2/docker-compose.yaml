@@ -1,0 +1,8 @@
+version: '3'
+services:
+  wordpress:
+    image: ghost:1-alpine
+    container_name: exercicio-2
+    ports:
+      - 2368:2368
+    
